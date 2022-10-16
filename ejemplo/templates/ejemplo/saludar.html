@@ -7,6 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    HOLA ACA VAMOS DE NUEVO CON TEMPLATE!!!!
+    HOLA ACA VAMOS DE NUEVO CON TEMPLATE!!!!{{nombre}}, {{apellido}}
+    <br>
+    {% for nota in notas %}
+
+      {% if nota > 5 %}
+           <p style="color:rgb(195, 35, 35)"> {{nota}}</p>
+      {% else %}  
+           <p style="color:rgb(106, 99, 193)"> {{nota}}</p> 
+          
+       {% endif %}  
+         
+      <br>
+    {% endfor %}
+
 </body>
 </html>
